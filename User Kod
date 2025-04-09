@@ -12,4 +12,4 @@
     data:
           ms_idref           type suid_st_node_root "Single Identity
         , mt_idref           type suid_tt_node_root "Identities(Mass mode)
-        , mv_id_indicator    type suidadtype
+        , mv_id_indicator    type suidadtypeee
