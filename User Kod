@@ -1,0 +1,15 @@
+  types: begin of ty_s_node_data,
+             node_name  type        suid_node_name,
+             node_type  type        char1,
+             data_ref   type ref to data,
+             data_x_ref type ref to data,
+             action_buf type ref to data, "ty_t_action_buffer
+             " STATUS, 'M' - modified Used in addituin to status from SUID_ST_NODE_ADMIN_DATA
+             status     type        char1,
+           end   of ty_s_node_data,
+           ty_t_node_data type standard table of ty_s_node_data.
+
+    data:
+          ms_idref           type suid_st_node_root "Single Identity
+        , mt_idref           type suid_tt_node_root "Identities(Mass mode)
+        , mv_id_indicator    type suidadtype
